@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* flascards */
+.flashcards{
+    width: 100vw;
+    background-color: rgb(230, 230, 230);
+}
+.flashcard-body{
+    width: 70vw;
+    margin: auto;
+}
+.title-flashcard{
+    text-transform: uppercase;
+    color: rgb(81, 135, 86);
+    margin: 1.5rem 0rem;
+}
+.btn-add{
+    margin: 1.5rem 0rem;
+    background-color: transparent;
+    color: rgb(255, 128, 0);
+    border: 1px solid rgb(255, 128, 0);
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.btn-add:hover{
+    background-color: rgb(255, 128, 0);
+    color: black;
+}
+.question-field{
+    border:  1px solid rgb(255, 128, 0);
+    border-radius: 10px;
+    width: 35vw;
+    height: 60vh;
+    margin-bottom: 2rem;
+    display: none;
+}
+.question-answer{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 31vw;
+    margin: auto;
+}
+.question p, .answer p{
+    font-size: 1.3rem;
+}
+#question, #answer{
+    border: 2px solid rgb(255, 128, 0);
+    border-radius: 10px;
+}
+.btn-save{
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 3px solid rgb(81, 135, 86);
+    color: rgb(81, 135, 86);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width: 20vw;
+    height: 7vh;
+}
+.btn-save:hover{
+    background-color: rgb(81, 135, 86);
+    color: white;
+}
+.close-button{
+    text-align: right;
+}
+.close-tab{
+    color: rgb(255, 128, 0);
+    font-size: 2rem;
+}
+.close-tab:hover{
+    color: rgb(81, 135, 86);
+}
+.display-question{
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: max-content;
+    row-gap: 20px;
+    column-gap: 20px;
+    word-break: break-word;
+}
+.card-question{
+    background-color: white;
+    padding: 2rem;
+}
+.question-value{    
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.answer-value{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;  
+    font-size: 1.5rem;
+    display: none;
+}
+.buttons-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.edit-content{
+    background-color: transparent;
+    color: rgb(81, 135, 86);
+    border: 5px solid rgb(81, 135, 86);
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+.delete-content{
+    background-color: transparent;
+    color: rgb(255, 128, 0);
+    border: 5px solid rgb(255, 128, 0);
+    border-radius: 10px;
+}
+.edit-content:hover{
+    color: black;
+    background-color: rgb(81, 135, 86);
+}
+.delete-content:hover{
+    color: white;
+    background-color: rgb(255, 128, 0);
+}
